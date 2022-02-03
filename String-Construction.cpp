@@ -1,3 +1,15 @@
+int stringConstruction(string s)
+{
+    std::set<char> st;
+    
+    for (int i = 0; i < s.length(); ++i)
+    {
+        st.insert(s[i]);
+    }
+    
+    return st.size();
+}
+
 int main()
 {
     ofstream fout(getenv("OUTPUT_PATH"));
