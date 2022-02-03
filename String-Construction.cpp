@@ -1,3 +1,17 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+string ltrim(const string &);
+string rtrim(const string &);
+
+/*
+ * Complete the 'stringConstruction' function below.
+ *
+ * The function is expected to return an INTEGER.
+ * The function accepts STRING s as parameter.
+ */
+
 int stringConstruction(string s)
 {
     std::set<char> st;
@@ -54,4 +68,3 @@ string rtrim(const string &str) {
 
     return s;
 }
-
