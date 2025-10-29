@@ -14,6 +14,18 @@ string rtrim(const string &);
 
 int stringConstruction(string s)
 {
+    unordered_set<char> uniqueChars;
+    
+    for (char c : s)
+    {
+        uniqueChars.insert(c);
+    }
+    
+    return uniqueChars.size();
+}
+
+int stringConstruction(string s)
+{
     std::set<char> st;
     
     for (int i = 0; i < s.length(); ++i)
