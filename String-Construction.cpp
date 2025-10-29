@@ -26,14 +26,14 @@ int stringConstruction(string s)
 
 int stringConstruction2(string s)
 {
-    std::set<char> st;
+    std::set<char> uniqueChars;
     
     for (int i = 0; i < s.length(); ++i)
     {
-        st.insert(s[i]);
+        uniqueChars.insert(s[i]);
     }
     
-    return st.size();
+    return uniqueChars.size();
 }
 
 int main()
