@@ -24,7 +24,7 @@ int stringConstruction(string s)
     return uniqueChars.size();
 }
 
-int stringConstruction(string s)
+int stringConstruction2(string s)
 {
     std::set<char> st;
     
