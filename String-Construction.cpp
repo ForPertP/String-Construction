@@ -27,7 +27,7 @@ int stringConstruction(string s)
 
 int stringConstruction2(string s)
 {
-    std::set<char> uniqueChars;
+    set<char> uniqueChars;
     
     for (int i = 0; i < s.length(); ++i)
     {
