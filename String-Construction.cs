@@ -25,7 +25,14 @@ class Result
 
     public static int stringConstruction(string s)
     {
+        HashSet<char> uniqueChars = new HashSet<char>();
 
-    }
+        foreach (char c in s)
+        {
+            uniqueChars.Add(c);
+        }
 
+        return uniqueChars.Count;
+    }    
+    
 }
