@@ -34,5 +34,18 @@ class Result
 
         return uniqueChars.Count;
     }    
+
+
+    public static int stringConstruction2(string s)
+    {
+        SortedSet<char> uniqueChars = new SortedSet<char>();
+
+        foreach (char c in s)
+        {
+            uniqueChars.Add(c);
+        }
+
+        return uniqueChars.Count;
+    }
     
 }
