@@ -9,3 +9,14 @@ import java.util.regex.*;
 import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
+
+
+    public static int stringConstruction(String s) {
+        HashSet<Character> uniqueChars = new HashSet<>();
+
+        for (char c : s.toCharArray()) {
+            uniqueChars.add(c);
+        }
+
+        return uniqueChars.size();
+    }    
