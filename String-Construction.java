@@ -20,3 +20,15 @@ import static java.util.stream.Collectors.toList;
 
         return uniqueChars.size();
     }    
+
+
+
+    public static int stringConstruction2(String s) {
+        TreeSet<Character> uniqueChars = new TreeSet<>();
+
+        for (char c : s.toCharArray()) {
+            uniqueChars.add(c);
+        }
+
+        return uniqueChars.size();
+    }
